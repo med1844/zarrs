@@ -12,6 +12,7 @@
 //! - the MIT license [LICENSE-MIT](https://docs.rs/crate/zarrs_storage/latest/source/LICENCE-MIT) or <http://opensource.org/licenses/MIT>, at your option.
 #![cfg_attr(docsrs, feature(doc_auto_cfg))]
 
+mod storage_handle;
 mod storage_sync;
 mod storage_value_io;
 pub mod store;
@@ -48,6 +49,8 @@ pub use self::storage_sync::{
     ReadableListableStorageTraits, ReadableStorageTraits, ReadableWritableListableStorageTraits,
     ReadableWritableStorageTraits, WritableStorageTraits,
 };
+
+pub use self::storage_handle::StorageHandle;
 
 pub use storage_value_io::StorageValueIO;
 
