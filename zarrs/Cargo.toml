@@ -47,6 +47,7 @@ derive_more = { version = "1.0.0", features = ["deref", "display", "from"] }
 flate2 = { version = "1.0.30", optional = true }
 futures = { version = "0.3.29", optional = true }
 gdeflate-sys = { version = "0.4.1", optional = true }
+getrandom = { version = "0.2", features = ["js"] }
 half = { version = "2.0.0", features = ["bytemuck"] }
 inventory = "0.3.0"
 itertools = "0.13.0"
